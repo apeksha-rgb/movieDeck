@@ -8,7 +8,7 @@ const MovieCard = ({movie}) => {
     const truncateOverview = (text, wordLimit) => {
         if(!text) return ""
         const words = text.split(" ")
-        if(words.lenght <= wordLimit){
+        if(words.length <= wordLimit){
           return text
         }
         return words.slice(0,wordLimit).join(" ") + "..."
